@@ -1,0 +1,23 @@
+{
+  "name": "furphy",
+  "description": "Monorepo for packages and refreshingly good tooling",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
+  "homepage": "https://github.com/cahamilton/furphy#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cahamilton/furphy.git"
+  },
+  "scripts": {
+    "lerna": "lerna",
+    "clean": "lerna run clean",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
