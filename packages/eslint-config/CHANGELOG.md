@@ -1,0 +1,16 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 0.1.0 (2020-11-07)
+
+
+### Bug Fixes
+
+* **eslint:** fix package publish scope ([c3b52dc](https://github.com/cahamilton/furphy/commit/c3b52dc9e666bfd86be86a2262506ab85cfde58a))
+
+
+### Features
+
+* **eslint:** add files for eslint-config ([897a17f](https://github.com/cahamilton/furphy/commit/897a17f02ffb7ce95e26570bb94fa02daf93eb70))
