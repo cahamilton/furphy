@@ -6,17 +6,24 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    name: Running on ${{ matrix.os }} and Node v${{ matrix.node-version }}
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        node-version: [14.x, 15.x]
+        node-version: [14, 15]
+        os: [ubuntu-latest, macos-latest]
 
     steps:
     - uses: actions/checkout@v2
-    - name: Using Node v${{ matrix.node-version }}
+
+    - name: Setup Node v${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn --frozen-lockfile
-    - run: yarn run build
+
+    - name: Install dependencies
+      run: yarn --frozen-lockfile
+
+    - name: Build packages
+      run: yarn run build
