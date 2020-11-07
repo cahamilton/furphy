@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/cahamilton/furphy/compare/@cahamilton/eslint-config@0.1.0...@cahamilton/eslint-config@0.1.1) (2020-11-07)
+
+
+### Bug Fixes
+
+* **eslint:** add keywords ([2c7e2b8](https://github.com/cahamilton/furphy/commit/2c7e2b86c42ff6deae07182b1bc168ae58d09cab))
+
+
+
+
+
 # 0.1.0 (2020-11-07)
 
 

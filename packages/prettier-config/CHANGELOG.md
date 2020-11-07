@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/cahamilton/furphy/compare/@cahamilton/prettier-config@0.1.0...@cahamilton/prettier-config@0.1.1) (2020-11-07)
+
+
+### Bug Fixes
+
+* **prettier:** add keywords ([883f972](https://github.com/cahamilton/furphy/commit/883f97297913396391ab9ddee6ce02d456c8103f))
+
+
+
+
+
 # 0.1.0 (2020-11-07)
 
 
