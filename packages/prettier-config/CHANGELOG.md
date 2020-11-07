@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/cahamilton/furphy/compare/@cahamilton/prettier-config@0.1.1...@cahamilton/prettier-config@0.1.2) (2020-11-07)
+
+**Note:** Version bump only for package @cahamilton/prettier-config
+
+
+
+
+
 ## [0.1.1](https://github.com/cahamilton/furphy/compare/@cahamilton/prettier-config@0.1.0...@cahamilton/prettier-config@0.1.1) (2020-11-07)
 
 
