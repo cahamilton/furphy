@@ -16,6 +16,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
   "scripts": {
     "build": "yarn run clean && yarn run compile",
     "clean": "rimraf dist",
