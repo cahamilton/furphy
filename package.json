@@ -16,7 +16,7 @@
     "lerna": "lerna",
     "clean": "lerna run clean",
     "build": "lerna run build",
-    "version": "lerna version --conventional-commits --create-release github"
+    "version": "lerna version --conventional-commits --create-release github --yes"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
