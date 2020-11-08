@@ -32,5 +32,10 @@ jobs:
     - name: Build packages
       run: yarn run build
 
+    - name: Checkout base branch
+      run: |
+        git checkout master
+        git pull
+
     - name: Publish packages
       run: npx lerna publish --yes
