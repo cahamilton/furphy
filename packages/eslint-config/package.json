@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "build": "yarn run clean && yarn run compile",
-    "clean": "rimraf dist/",
+    "clean": "rimraf dist",
     "compile": "tsc"
   },
   "dependencies": {
@@ -40,7 +40,7 @@
   "devDependencies": {
     "@cahamilton/prettier-config": "^0.1.16",
     "@types/eslint": "^7.2.4",
-    "eslint": "^7.13.0",
+    "eslint": "^7.20.0",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.7"
