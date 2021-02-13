@@ -65,7 +65,7 @@ jobs:
       run: yarn run build
 
     - name: Version Packages
-      run: yarn run ci:version
+      run: yarn run version
 
     - name: Publish packages
-      run: yarn run ci:publish
+      run: npx lerna publish from-package --yes
