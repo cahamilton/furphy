@@ -17,7 +17,8 @@
     "clean": "lerna run clean",
     "build": "lerna run build",
     "test": "lerna run test",
-    "version": "lerna version --conventional-commits --create-release github --yes"
+    "ci:version": "lerna version --conventional-commits --yes",
+    "ci:publish": "lerna publish --yes"
   },
   "devDependencies": {
     "lerna": "^3.22.1"

@@ -34,8 +34,11 @@ jobs:
     - name: Test packages
       run: yarn run test
 
-  create-release:
-    name: Create Release
+    - name: Version Packages
+      run: yarn run ci:version
+
+  publish:
+    name: Publish
     needs: build
     runs-on: ubuntu-latest
     env:
@@ -48,11 +51,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Set credentials
-      run: |
-        git config user.name Carl Hamilton
-        git config user.email carlanthonyhamilton@gmail.com
-
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
@@ -64,5 +62,5 @@ jobs:
     - name: Build packages
       run: yarn run build
 
-    - name: Create Release
-      run: yarn run version
+    - name: Publish packages
+      run: yarn run ci:publish
