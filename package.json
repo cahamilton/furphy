@@ -18,7 +18,7 @@
     "build": "lerna run build",
     "test": "lerna run test",
     "ci:version": "lerna version --conventional-commits --yes",
-    "ci:publish": "lerna publish --yes"
+    "ci:publish": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
