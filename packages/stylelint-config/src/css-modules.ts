@@ -4,8 +4,8 @@ import { Configuration } from "stylelint";
 
 const config: Partial<Configuration> = {
   extends: [
-    "stylelint-config-standard",
-    "stylelint-config-property-sort-order-smacss",
+    "@cahamilton/stylelint-config", //
+    "stylelint-config-css-modules",
   ],
 };
 

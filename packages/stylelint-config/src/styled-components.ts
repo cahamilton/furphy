@@ -3,9 +3,10 @@
 import { Configuration } from "stylelint";
 
 const config: Partial<Configuration> = {
+  processors: ["stylelint-processor-styled-components"],
   extends: [
-    "stylelint-config-standard",
-    "stylelint-config-property-sort-order-smacss",
+    "@cahamilton/stylelint-config",
+    "stylelint-config-styled-components",
   ],
 };
 
