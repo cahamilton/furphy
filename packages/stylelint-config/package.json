@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/stylelint-config",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Configuration for Stylelint",
   "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
@@ -37,7 +37,7 @@
     "stylelint-processor-styled-components": "^1.10.0"
   },
   "devDependencies": {
-    "@cahamilton/eslint-config": "^0.2.9",
+    "@cahamilton/eslint-config": "^0.2.10",
     "@types/jest": "^26.0.20",
     "@types/stylelint": "^9.10.1",
     "eslint": "^7.20.0",
