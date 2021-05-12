@@ -37,7 +37,6 @@ const config: Linter.Config = {
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "airbnb-typescript",
         "prettier",
-        "prettier/@typescript-eslint",
       ],
       rules: rulesTS,
     },
