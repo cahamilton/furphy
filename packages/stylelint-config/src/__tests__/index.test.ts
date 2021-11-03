@@ -1,5 +1,8 @@
 /** @format */
 
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import { lint } from "stylelint";
 import * as configuration from "../index";
 

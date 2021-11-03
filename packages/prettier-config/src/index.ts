@@ -4,10 +4,10 @@ import { Options } from "prettier";
 
 const config: Options = {
   arrowParens: "always",
+  bracketSameLine: false,
   bracketSpacing: true,
   endOfLine: "lf",
   insertPragma: true,
-  jsxBracketSameLine: false,
   jsxSingleQuote: false,
   printWidth: 80,
   quoteProps: "consistent",

@@ -1,13 +1,21 @@
 /** @format */
 
-import { Configuration } from "stylelint";
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-const config: Partial<Configuration> = {
+import { Config } from "stylelint";
+
+const config: Config = {
   extends: [
     "stylelint-config-standard",
     "stylelint-config-css-modules",
     "stylelint-config-styled-components",
     "stylelint-config-property-sort-order-smacss",
+  ],
+  overrides: [
+    {
+      files: ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"],
+      customSyntax: "postcss-jsx",
+    },
   ],
 };
 
