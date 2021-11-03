@@ -30,7 +30,7 @@
     "test": "yarn run prettier && yarn run eslint && yarn run jest"
   },
   "dependencies": {
-    "postcss-jsx": "^0.36.4",
+    "@stylelint/postcss-css-in-js": "^0.37.2",
     "postcss-syntax": "^0.36.2",
     "stylelint-config-css-modules": "^2.2.0",
     "stylelint-config-property-sort-order-smacss": "^8.0.0",

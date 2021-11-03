@@ -13,8 +13,14 @@ const config: Config = {
   ],
   overrides: [
     {
+      //! Package is soon to be deprecated:
+      //! https://github.com/stylelint/postcss-css-in-js/issues/225
+      customSyntax: "@stylelint/postcss-css-in-js",
       files: ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"],
-      customSyntax: "postcss-jsx",
+      rules: {
+        "no-empty-first-line": null,
+        "value-keyword-case": null,
+      },
     },
   ],
 };
