@@ -18,7 +18,7 @@ const rulesTS: Linter.RulesRecord = {
 };
 
 const config: Linter.Config = {
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
   extends: ["airbnb", "airbnb/hooks", "prettier"],
   rules: rulesJS,
   overrides: [
