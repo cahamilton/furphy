@@ -37,21 +37,7 @@
     "stylelint-config-standard": "^23.0.0",
     "stylelint-config-styled-components": "^0.1.1"
   },
-  "devDependencies": {
-    "@cahamilton/eslint-config": "^0.3.2",
-    "@types/jest": "^27.0.2",
-    "eslint": "^7.20.0",
-    "globby": "^11.0.1",
-    "jest": "^27.3.1",
-    "prettier": "^2.1.2",
-    "rimraf": "^3.0.2",
-    "styled-components": "^5.2.1",
-    "stylelint": "^14.0.0",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.0.0"
-  },
   "peerDependencies": {
     "stylelint": "^14.0.0"
-  },
-  "prettier": "@cahamilton/prettier-config"
+  }
 }

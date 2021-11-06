@@ -25,14 +25,7 @@
     "clean": "rimraf dist",
     "compile": "tsc"
   },
-  "devDependencies": {
-    "@types/prettier": "^2.2.1",
-    "prettier": "^2.1.2",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.0.0"
-  },
   "peerDependencies": {
     "prettier": "^2.1.2"
-  },
-  "prettier": "@cahamilton/prettier-config"
+  }
 }
