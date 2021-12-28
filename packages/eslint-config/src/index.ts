@@ -1,6 +1,6 @@
 /** @format */
 
-import { Linter } from "eslint";
+import type { Linter } from "eslint";
 
 const rulesJS: Linter.RulesRecord = {
   "import/prefer-default-export": "off",
@@ -43,4 +43,4 @@ const config: Linter.Config = {
   ],
 };
 
-module.exports = config;
+export = config;

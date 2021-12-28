@@ -1,6 +1,6 @@
 /** @format */
 
-import { Options } from "prettier";
+import type { Options } from "prettier";
 
 const config: Options = {
   arrowParens: "always",
@@ -19,4 +19,4 @@ const config: Options = {
   useTabs: false,
 };
 
-module.exports = config;
+export = config;

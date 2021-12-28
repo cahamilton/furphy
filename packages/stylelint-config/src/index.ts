@@ -1,8 +1,6 @@
 /** @format */
 
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
-import { Config } from "stylelint";
+import type { Config } from "stylelint";
 
 const config: Config = {
   extends: [
@@ -25,4 +23,4 @@ const config: Config = {
   ],
 };
 
-module.exports = config;
+export = config;
