@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/stylelint-config",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Configuration for Stylelint",
   "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
