@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/eslint-config",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Configuration for ESLint",
   "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
