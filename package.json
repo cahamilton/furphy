@@ -20,9 +20,9 @@
     "version": "lerna version --conventional-commits --no-changelog --yes"
   },
   "devDependencies": {
-    "@cahamilton/eslint-config": "file:packages/eslint-config",
-    "@cahamilton/prettier-config": "file:packages/prettier-config",
-    "@cahamilton/stylelint-config": "file:packages/stylelint-config",
+    "@cahamilton/eslint-config": "*",
+    "@cahamilton/prettier-config": "*",
+    "@cahamilton/stylelint-config": "*",
     "@types/eslint": "^8.2.0",
     "@types/jest": "^27.0.2",
     "@types/prettier": "^2.2.1",

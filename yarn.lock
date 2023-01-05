@@ -322,34 +322,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cahamilton/eslint-config@file:packages/eslint-config":
-  version "0.3.8"
-  dependencies:
-    "@babel/core" "^7.11.0"
-    "@babel/eslint-parser" "^7.16.0"
-    "@typescript-eslint/eslint-plugin" "^5.8.0"
-    "@typescript-eslint/parser" "^5.8.0"
-    eslint-config-airbnb "^19.0.3"
-    eslint-config-airbnb-typescript "^16.1.0"
-    eslint-config-prettier "^8.3.0"
-    eslint-plugin-import "^2.25.3"
-    eslint-plugin-jsx-a11y "^6.5.1"
-    eslint-plugin-react "^7.28.0"
-    eslint-plugin-react-hooks "^4.3.0"
-
-"@cahamilton/prettier-config@file:packages/prettier-config":
-  version "0.3.8"
-
-"@cahamilton/stylelint-config@file:packages/stylelint-config":
-  version "0.3.8"
-  dependencies:
-    "@stylelint/postcss-css-in-js" "^0.37.2"
-    postcss-syntax "^0.36.2"
-    stylelint-config-css-modules "^2.2.0"
-    stylelint-config-property-sort-order-smacss "^8.0.0"
-    stylelint-config-standard "^23.0.0"
-    stylelint-config-styled-components "^0.1.1"
-
 "@csstools/selector-specificity@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
