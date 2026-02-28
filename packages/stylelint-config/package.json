@@ -38,7 +38,12 @@
     "stylelint-config-standard": "^23.0.0",
     "stylelint-config-styled-components": "^0.1.1"
   },
+  "devDependencies": {
+    "@cahamilton/eslint-config": "*",
+    "@cahamilton/prettier-config": "*"
+  },
   "peerDependencies": {
     "stylelint": "^14.0.0"
-  }
+  },
+  "prettier": "@cahamilton/prettier-config"
 }
