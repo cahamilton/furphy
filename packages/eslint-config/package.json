@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/eslint-config",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "Configuration for ESLint",
   "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
@@ -42,7 +42,7 @@
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "devDependencies": {
-    "@cahamilton/prettier-config": "*"
+    "@cahamilton/prettier-config": "^0.3.11"
   },
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
