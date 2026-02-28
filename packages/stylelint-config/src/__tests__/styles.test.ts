@@ -1,7 +1,7 @@
 /** @format */
 
-import fs from "fs/promises";
-import globby from "globby";
+import { readFile } from "node:fs/promises";
+import { globSync } from "node:fs";
 import path from "path";
 import stylelint from "stylelint";
 
@@ -13,8 +13,8 @@ import stylelint from "stylelint";
 import * as config from "../index";
 
 describe("styles", () => {
-  const accepted = globby.sync("**/accept/*.css") as Array<string>;
-  const rejected = globby.sync("**/reject/*.css") as Array<string>;
+  const accepted = globSync("**/accept/*.css");
+  const rejected = globSync("**/reject/*.css");
 
   describe("accept", () => {
     accepted.forEach((file) => {
@@ -26,7 +26,7 @@ describe("styles", () => {
       }
 
       test(`${ruleName} - ${filename}`, async () => {
-        const code = await fs.readFile(file, "utf-8");
+        const code = await readFile(file, "utf-8");
         const { results } = await stylelint.lint({ code, config });
         const { warnings } = results[0];
 
@@ -47,7 +47,7 @@ describe("styles", () => {
       }
 
       test(`${ruleName} - ${filename}`, async () => {
-        const code = await fs.readFile(file, "utf-8");
+        const code = await readFile(file, "utf-8");
         const { results } = await stylelint.lint({ code, config });
         const { warnings } = results[0];
 

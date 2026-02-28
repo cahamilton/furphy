@@ -2,7 +2,7 @@
   "name": "@cahamilton/prettier-config",
   "version": "0.3.10",
   "description": "Configuration for Prettier",
-  "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
+  "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
   "main": "dist/index.js",
@@ -21,9 +21,10 @@
     "prettier-config"
   ],
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
-    "clean": "rimraf dist",
-    "compile": "tsc"
+    "clean": "rm -rfv dist/",
+    "build": "tsc",
+    "prebuild": "npm run clean",
+    "prepack": "npm run build"
   },
   "peerDependencies": {
     "prettier": "^2.1.2"

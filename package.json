@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "private": true,
-  "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
+  "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
   "repository": {
@@ -16,29 +16,23 @@
     "lerna": "lerna",
     "clean": "lerna run clean",
     "build": "lerna run build --verbose",
-    "test": "yarn --frozen-lockfile --check-files && lerna run test",
-    "version": "lerna version --conventional-commits --no-changelog --yes"
+    "test": "lerna run test",
+    "version": "lerna version --conventional-commits --no-changelog --yes",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@cahamilton/eslint-config": "*",
-    "@cahamilton/prettier-config": "*",
-    "@cahamilton/stylelint-config": "*",
     "@types/eslint": "^8.2.0",
-    "@types/jest": "^27.0.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
     "@types/prettier": "^2.2.1",
     "eslint": "^8.2.0",
-    "globby": "^11.0.1",
-    "jest": "^27.3.1",
-    "lerna": "^6.0.0",
+    "husky": "^9.1.7",
+    "jest": "^30.0.0",
+    "lerna": "^9.0.0",
     "prettier": "^2.1.2",
-    "rimraf": "^3.0.2",
     "styled-components": "^5.2.1",
     "stylelint": "^14.0.0",
-    "ts-jest": "^27.0.7",
+    "ts-jest": "^29.0.0",
     "typescript": "^4.0.0"
-  },
-  "eslintConfig": {
-    "extends": "@cahamilton/eslint-config"
-  },
-  "prettier": "@cahamilton/prettier-config"
+  }
 }

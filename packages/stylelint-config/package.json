@@ -2,7 +2,7 @@
   "name": "@cahamilton/stylelint-config",
   "version": "0.3.10",
   "description": "Configuration for Stylelint",
-  "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
+  "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
   "main": "dist/index.js",
@@ -21,13 +21,14 @@
     "stylelint-config"
   ],
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
-    "clean": "rimraf dist",
-    "compile": "tsc",
+    "clean": "rm -rfv dist/",
+    "build": "tsc",
+    "prebuild": "npm run clean && npm run test",
+    "prepack": "npm run build",
     "eslint": "eslint . --ext .ts",
     "jest": "jest",
     "prettier": "prettier --check '**/*.ts'",
-    "test": "yarn run prettier && yarn run eslint && yarn run jest"
+    "test": "npm run prettier && npm run eslint && npm run jest"
   },
   "dependencies": {
     "@stylelint/postcss-css-in-js": "^0.37.2",
@@ -37,7 +38,12 @@
     "stylelint-config-standard": "^23.0.0",
     "stylelint-config-styled-components": "^0.1.1"
   },
+  "devDependencies": {
+    "@cahamilton/eslint-config": "*",
+    "@cahamilton/prettier-config": "*"
+  },
   "peerDependencies": {
     "stylelint": "^14.0.0"
-  }
+  },
+  "prettier": "@cahamilton/prettier-config"
 }

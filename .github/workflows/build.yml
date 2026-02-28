@@ -1,5 +1,12 @@
 name: Build
 
+env:
+  HUSKY: 0
+
+permissions:
+  id-token: write
+  contents: read
+
 on:
   push:
     branches:
@@ -12,11 +19,11 @@ jobs:
   build:
     name: Node v${{ matrix.node-version }} / ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 10
+    timeout-minutes: 5
 
     strategy:
       matrix:
-        node-version: [16, 18]
+        node-version: [22, 24]
         os: [ubuntu-latest, macos-latest]
 
     steps:
@@ -29,19 +36,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
 
       - name: Build packages
-        run: yarn run build
-
-      - name: Test packages
-        run: yarn run test
+        run: npm run build
 
   publish:
     name: Publish
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
 
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
 
@@ -52,24 +56,21 @@ jobs:
       - name: Set credentials
         run: |
           git config user.name Carl Hamilton
-          git config user.email carlanthonyhamilton@gmail.com
+          git config user.email 4007311+cahamilton@users.noreply.github.com
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 24
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
 
       - name: Build packages
-        run: yarn run build
+        run: npm run build
 
       - name: Version Packages
-        run: yarn run version
+        run: npm run version
 
       - name: Publish packages
-        run: |
-          npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-          npm whoami
-          npx lerna publish from-package --yes
+        run: npx lerna publish from-package --yes
