@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/prettier-config",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "description": "Configuration for Prettier",
   "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
