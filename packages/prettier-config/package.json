@@ -21,9 +21,10 @@
     "prettier-config"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rimraf dist",
-    "compile": "tsc"
+    "clean": "rm -rfv dist/",
+    "build": "tsc",
+    "prebuild": "npm run clean",
+    "prepack": "npm run build"
   },
   "peerDependencies": {
     "prettier": "^2.1.2"

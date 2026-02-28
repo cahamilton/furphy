@@ -21,9 +21,10 @@
     "eslint-config"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rimraf dist",
-    "compile": "tsc"
+    "clean": "rm -rfv dist/",
+    "build": "tsc",
+    "prebuild": "npm run clean",
+    "prepack": "npm run build"
   },
   "dependencies": {
     "@babel/core": "^7.11.0",

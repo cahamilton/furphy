@@ -21,9 +21,10 @@
     "stylelint-config"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rimraf dist",
-    "compile": "tsc",
+    "clean": "rm -rfv dist/",
+    "build": "tsc",
+    "prebuild": "npm run clean && npm run test",
+    "prepack": "npm run build",
     "eslint": "eslint . --ext .ts",
     "jest": "jest",
     "prettier": "prettier --check '**/*.ts'",
