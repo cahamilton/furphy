@@ -4,4 +4,7 @@
 
 Configuration for Prettier
 
-![npm (scoped)](https://img.shields.io/npm/v/@cahamilton/prettier-config?logo=npm&label=npm&logoColor=white)
+[badge-prettier]: https://img.shields.io/npm/v/@cahamilton/prettier-config?logo=npm
+[npm-prettier]: https://www.npmjs.com/package/@cahamilton/prettier-config
+
+[![badge-prettier]][npm-prettier]
