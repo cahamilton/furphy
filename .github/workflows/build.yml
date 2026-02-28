@@ -52,7 +52,7 @@ jobs:
       - name: Set credentials
         run: |
           git config user.name Carl Hamilton
-          git config user.email carlanthonyhamilton@gmail.com
+          git config user.email 4007311+cahamilton@users.noreply.github.com
 
       - name: Setup Node
         uses: actions/setup-node@v3

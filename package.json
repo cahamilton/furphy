@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "private": true,
-  "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
+  "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
   "repository": {

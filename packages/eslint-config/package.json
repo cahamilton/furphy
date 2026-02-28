@@ -2,7 +2,7 @@
   "name": "@cahamilton/eslint-config",
   "version": "0.3.10",
   "description": "Configuration for ESLint",
-  "author": "Carl Hamilton <carlanthonyhamilton@gmail.com>",
+  "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
   "main": "dist/index.js",
