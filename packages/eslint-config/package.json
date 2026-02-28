@@ -21,7 +21,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
+    "build": "npm run clean && npm run compile",
     "clean": "rimraf dist",
     "compile": "tsc"
   },

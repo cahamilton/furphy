@@ -16,7 +16,7 @@
     "lerna": "lerna",
     "clean": "lerna run clean",
     "build": "lerna run build --verbose",
-    "test": "yarn --frozen-lockfile --check-files && lerna run test",
+    "test": "lerna run test",
     "version": "lerna version --conventional-commits --no-changelog --yes"
   },
   "devDependencies": {

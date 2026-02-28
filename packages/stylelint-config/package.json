@@ -21,13 +21,13 @@
     "stylelint-config"
   ],
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
+    "build": "npm run clean && npm run compile",
     "clean": "rimraf dist",
     "compile": "tsc",
     "eslint": "eslint . --ext .ts",
     "jest": "jest",
     "prettier": "prettier --check '**/*.ts'",
-    "test": "yarn run prettier && yarn run eslint && yarn run jest"
+    "test": "npm run prettier && npm run eslint && npm run jest"
   },
   "dependencies": {
     "@stylelint/postcss-css-in-js": "^0.37.2",

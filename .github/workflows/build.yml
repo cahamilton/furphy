@@ -29,13 +29,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
 
       - name: Build packages
-        run: yarn run build
+        run: npm run build
 
       - name: Test packages
-        run: yarn run test
+        run: npm run test
 
   publish:
     name: Publish
@@ -60,13 +60,13 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
 
       - name: Build packages
-        run: yarn run build
+        run: npm run build
 
       - name: Version Packages
-        run: yarn run version
+        run: npm run version
 
       - name: Publish packages
         run: |
