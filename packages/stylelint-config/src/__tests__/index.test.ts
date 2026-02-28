@@ -1,21 +1,19 @@
 /** @format */
 
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
-import { lint } from "stylelint";
-import * as configuration from "../index";
+import { describe, it, expect } from "vitest";
+import stylelint from "stylelint";
+import configuration from "../index";
 
 describe("configuration", () => {
   const code = `
     a {
-      top: 0;
       color: red;
+      top: 0;
     }
   `;
 
   it("should not report errors", async () => {
-    const { errored } = await lint({
+    const { errored } = await stylelint.lint({
       code,
       config: {
         rules: [],
@@ -26,7 +24,7 @@ describe("configuration", () => {
   });
 
   it("should report errors", async () => {
-    const { errored } = await lint({
+    const { errored } = await stylelint.lint({
       code,
       config: configuration,
     });

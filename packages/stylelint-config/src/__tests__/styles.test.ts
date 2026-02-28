@@ -1,16 +1,12 @@
 /** @format */
 
+import { describe, test, expect } from "vitest";
 import { readFile } from "node:fs/promises";
 import { globSync } from "node:fs";
 import path from "path";
 import stylelint from "stylelint";
 
-// TODO: Fix up these ignores. @types aren't behaving
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
-import * as config from "../index";
+import config from "../index";
 
 describe("styles", () => {
   const accepted = globSync("**/accept/*.css");
