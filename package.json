@@ -17,7 +17,8 @@
     "clean": "lerna run clean",
     "build": "lerna run build --verbose",
     "test": "lerna run test",
-    "version": "lerna version --conventional-commits --no-changelog --yes"
+    "version": "lerna version --conventional-commits --no-changelog --yes",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@cahamilton/eslint-config": "*",
@@ -28,6 +29,7 @@
     "@types/node": "^22.0.0",
     "@types/prettier": "^2.2.1",
     "eslint": "^8.2.0",
+    "husky": "^9.1.7",
     "jest": "^30.0.0",
     "lerna": "^9.0.0",
     "prettier": "^2.1.2",
