@@ -1,11 +1,16 @@
 {
   "name": "@cahamilton/eslint-config",
-  "version": "0.3.18",
+  "version": "1.0.0",
   "description": "Configuration for ESLint",
   "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
+  "type": "module",
   "main": "dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
   "files": [
     "dist"
   ],
@@ -26,27 +31,26 @@
     "prebuild": "npm run clean && npm run test",
     "prepack": "npm run build",
     "prettier": "prettier --check '**/*.ts'",
+    "prettier:fix": "prettier --write '**/*.ts'",
     "test": "npm run prettier"
   },
   "dependencies": {
-    "@babel/core": "^7.11.0",
-    "@babel/eslint-parser": "^7.16.0",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
-    "eslint-config-airbnb": "^19.0.3",
-    "eslint-config-airbnb-typescript": "^16.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "@eslint/js": "^9.39.0",
+    "@eslint/json": "^1.0.0",
+    "@eslint/markdown": "^7.5.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "typescript-eslint": "^8.56.0"
   },
   "devDependencies": {
-    "@cahamilton/prettier-config": "latest"
+    "@cahamilton/prettier-config": "latest",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.0"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0 || ^8.2.0",
-    "typescript": "^4.0.0"
+    "eslint": "^9.39.0",
+    "typescript": "^5.0.0"
   },
   "prettier": "@cahamilton/prettier-config"
 }
