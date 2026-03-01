@@ -10,7 +10,6 @@ const config: Config = {
   endOfLine: "lf",
   htmlWhitespaceSensitivity: "css",
   insertPragma: true,
-  jsxBracketSameLine: false,
   jsxSingleQuote: false,
   objectWrap: "preserve",
   printWidth: 80,
