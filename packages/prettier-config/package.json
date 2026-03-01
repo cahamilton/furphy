@@ -1,11 +1,16 @@
 {
   "name": "@cahamilton/prettier-config",
-  "version": "0.3.15",
+  "version": "1.0.0",
   "description": "Configuration for Prettier",
   "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
   "license": "MIT",
+  "type": "module",
   "main": "dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
   "files": [
     "dist"
   ],
@@ -27,6 +32,6 @@
     "prepack": "npm run build"
   },
   "peerDependencies": {
-    "prettier": "^2.1.2"
+    "prettier": "^3.0.0"
   }
 }
