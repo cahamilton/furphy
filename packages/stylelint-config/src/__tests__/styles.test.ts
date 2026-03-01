@@ -27,7 +27,7 @@ describe("styles", () => {
         const { warnings } = results[0];
 
         expect(warnings).not.toContainEqual(
-          expect.objectContaining({ rule: ruleName, severity: "error" })
+          expect.objectContaining({ rule: ruleName, severity: "error" }),
         );
       });
     });
@@ -49,7 +49,7 @@ describe("styles", () => {
 
         expect(warnings.length).toBeGreaterThan(0);
         expect(warnings).toContainEqual(
-          expect.objectContaining({ rule: ruleName, severity: "error" })
+          expect.objectContaining({ rule: ruleName, severity: "error" }),
         );
       });
     });
