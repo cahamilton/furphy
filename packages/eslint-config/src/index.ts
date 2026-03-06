@@ -116,7 +116,6 @@ export default defineConfig([
   },
   {
     files: ["**/*.json"],
-    // @ts-ignore: https://github.com/eslint/json/issues/213
     plugins: { json },
     language: "json/json",
     extends: ["json/recommended"],
