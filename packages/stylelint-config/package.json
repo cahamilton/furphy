@@ -43,8 +43,8 @@
     "stylelint-config-standard-scss": "^17.0.0"
   },
   "devDependencies": {
-    "@cahamilton/eslint-config": "latest",
-    "@cahamilton/prettier-config": "latest"
+    "@cahamilton/eslint-config": "*",
+    "@cahamilton/prettier-config": "*"
   },
   "peerDependencies": {
     "stylelint": "^17.0.0"
