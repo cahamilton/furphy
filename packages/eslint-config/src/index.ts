@@ -34,15 +34,28 @@ export default defineConfig([
     rules: {
       "curly": ["error", "all"],
       "eqeqeq": ["error", "always"],
+      "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
       "import/order": [
         "error",
         {
-          "groups": [["builtin", "external", "internal"]],
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+            "object",
+            "type",
+            "unknown",
+          ],
           "alphabetize": {
             order: "asc",
             caseInsensitive: true,
           },
+          "sortTypesGroup": true,
           "newlines-between": "always",
+          "newlines-between-types": "never",
           "warnOnUnassignedImports": false,
         },
       ],
@@ -67,6 +80,7 @@ export default defineConfig([
     },
     rules: {
       "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+      "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/no-confusing-void-expression": ["off"],
       "@typescript-eslint/restrict-template-expressions": [
         "error",
