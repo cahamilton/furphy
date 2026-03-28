@@ -54,7 +54,7 @@ export default defineConfig([
             caseInsensitive: true,
           },
           "sortTypesGroup": true,
-          "newlines-between": "always",
+          "newlines-between": "never",
           "newlines-between-types": "never",
           "warnOnUnassignedImports": false,
         },
