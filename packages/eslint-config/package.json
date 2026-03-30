@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/eslint-config",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Configuration for ESLint",
   "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
@@ -46,7 +46,7 @@
     "typescript-eslint": "^8.57.3-alpha.4"
   },
   "devDependencies": {
-    "@cahamilton/prettier-config": "^1.1.1",
+    "@cahamilton/prettier-config": "^1.2.0",
     "@types/eslint-plugin-jsx-a11y": "^6.10.0"
   },
   "peerDependencies": {
