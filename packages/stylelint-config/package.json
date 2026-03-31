@@ -1,6 +1,6 @@
 {
   "name": "@cahamilton/stylelint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Configuration for Stylelint",
   "author": "Carl Hamilton <github@carlhamilton.dev>",
   "homepage": "https://github.com/cahamilton/furphy#readme",
@@ -43,8 +43,8 @@
     "stylelint-config-standard-scss": "^17.0.0"
   },
   "devDependencies": {
-    "@cahamilton/eslint-config": "^1.2.0",
-    "@cahamilton/prettier-config": "^1.2.0"
+    "@cahamilton/eslint-config": "^1.2.1",
+    "@cahamilton/prettier-config": "^1.2.1"
   },
   "peerDependencies": {
     "stylelint": "^17.0.0"
